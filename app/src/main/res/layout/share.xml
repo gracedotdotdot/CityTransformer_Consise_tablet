@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <fragment
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".navigation.MapsActivity"
+        tools:layout="@layout/activity_maps" />
+
+
+    <Button
+        android:id="@+id/btnUnlock"
+        android:layout_width="204dp"
+        android:layout_height="90dp"
+        android:background="@drawable/scan_to_ride"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Scan to Unlock"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/btnRing"
+        app:layout_constraintStart_toEndOf="@+id/imgDistanceTime" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".95" />
+
+    <Button
+        android:id="@+id/btnRing"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline100"
+        app:layout_constraintStart_toEndOf="@+id/btnUnlock" />
+
+    <ImageView
+        android:id="@+id/imgDistanceTime"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/distance_new"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/btnUnlock"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@id/guideline0" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="550 m"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgDistanceTime"
+        app:layout_constraintEnd_toEndOf="@+id/imgDistanceTime"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/imgDistanceTime" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textDistance"
+        app:layout_constraintEnd_toEndOf="@+id/imgDistanceTime"
+        app:layout_constraintStart_toStartOf="@+id/imgDistanceTime" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:override="true">CityTransformer</string>
+    <!--<string name="mapbox_access_token">pk.eyJ1IjoiaGVyc2hpbmUiLCJhIjoiY2p4dWRtdWsxMDJnaDNvdWdocGQxN3c4bCJ9.PBhV8xvcFsEDAAL2bpnfBg</string>-->
+    <string name="googlemap_api_key">AIzaSyA_Uf2TIHtmgbPLb3KV-Z_Xy0PIZ8SMWE0</string>
+
+    <string name="duration">Trip Duration: </string>
+
+    <string name="carview">CarView</string>
+    <string name="citytransformer">CityTransformer</string>
+    <string name="menu">menu</string>
+    <string name="battery">Battery:</string>
+    <string name="miles_left">miles left</string>
+    <string name="door">Door:</string>
+    <string name="lock">LOCK</string>
+    <string name="unlock">UNLOCK</string>
+    <string name="_208">208</string>
+    <string name="batteryIMG">Battery</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="gender">gender</string>
+    <string name="male">male</string>
+    <string name="sign_up">sign up</string>
+    <string name="age">age</string>
+    <string name="email">Email</string>
+    <string name="female">female</string>
+    <string name="Email">email</string>
+
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="simulate_route">Simulate Route</string>
+    <string name="start_from_location">Start route from current location</string>
+    <string name="language">Language</string>
+    <string name="unit_type">Unit Type</string>
+    <string name="route_profile">Route Profile</string>
+
+    <string name="job_id">JobId</string>
+    <string name="vehicle_id">VehicleId</string>
+    <string name="search_input">Search…</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="unit_type_key" translatable="false">unit_type</string>
+    <string name="simulate_route_key" translatable="false">simulate_route</string>
+    <string name="start_from_location_key" translatable="false">start_from_location</string>
+    <string name="language_key" translatable="false">language</string>
+    <string name="route_profile_key" translatable="false">route_profile</string>
+    <string name="first_start_dialog_key" translatable="false">first_start_dialog</string>
+    <string name="default_locale" translatable="false">default_for_device</string>
+    <string name="default_unit_type" translatable="false">default_for_device</string>
+    <string name="current_night_mode" translatable="false">current_night_mode</string>
+
+    <string name="error_route_not_available">Current route is not available</string>
+    <string name="error_select_longer_route">Please select a longer route</string>
+    <string name="error_valid_route_not_found">Valid route not found.</string>
+    <string name="error_calculating_route">There was an error calculating the route</string>
+    <string name="error_fetching_solution">There was an error fetching the solution</string>
+    <string name="error_fetching_geocoding">There was an error fetching results from the geocoding API</string>
+    <string name="error_vehicle_not_found">Vehicle not found</string>
+    <string name="error_location_not_found">Location not found</string>
+    <string name="error_geocoding_no_location">No location found</string>
+    <string name="error_too_many_waypoints">A route cannot have more than 25 waypoints</string>
+    <string name="error_not_enough_waypoints">A route needs at least 2 waypoints</string>
+    <string name="error_no_browser_installed">No browser installed</string>
+    <string name="error_too_far_from_start_title">Too far from start</string>
+    <string name="error_too_far_from_start_message">Would you like to recalculate the route from your current location?</string>
+    <string name="explanation_long_press_waypoint">Long press map to place waypoint</string>
+    <string name="launch_navigation">Launch Navigation</string>
+    <string name="reset_route">Reset Route</string>
+    <string name="fetch_solution">Fetch Solution</string>
+    <string name="geocoding_search">Search</string>
+    <string name="help_message_title">Getting Started</string>
+    <string name="agree">I agree</string>
+    <string name="github">Contribute on Github</string>
+
+    <string name="open_gh_maps">Open Route from GH Maps</string>
+    <string name="open_vrp_solution">Open VRP Solution</string>
+
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+
+    <string name="enter_destination">Please enter your destination</string>
+
+    <string-array name="MenuList">
+        <item>Main</item>
+        <item>Battery</item>
+        <item>Navigation</item>
+        <item>Environment</item>
+        <item>Share</item>
+        <item>Account</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
+
